@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시계 및 알람</title>
+    <link rel="stylesheet" href="./clcok.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="icons">
+                <i class="fa fa-sun" id="toggle-theme"></i>
+            </div>
+            <div class="battery-status">
+                <div id="battery">100%</div>
+                
+            </div>
+            <div class="date-box">
+                <span id="current-date">0000-00-00</span>
+            </div>
+            <div class="clock">
+                <div class="time-colon">
+                    <div class="time-text">
+                        <span class="num hour_num">00</span>
+                        <span class="text">Hours</span>
+                    </div>
+                    <span class="colon">:</span>
+                </div>
+                <div class="time-colon">
+                    <div class="time-text">
+                        <span class="num min_num">00</span>
+                        <span class="text">Minutes</span>
+                    </div>
+                    <span class="colon">:</span>
+                </div>
+                <div class="time-colon">
+                    <div class="time-text">
+                        <span class="num sec_num">00</span>
+                        <span class="text">Seconds</span>
+                    </div>
+                    <div class="am_pm">
+                        <span>AM</span>
+                        <div id="alarm-box" class="alarm-box"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="alarm-section">
+                <label for="alarm-hour">hour:</label>
+                <input type="number" id="alarm-hour" min="1" max="24" placeholder="00">
+                <label for="alarm-minute">min:</label>
+                <input type="number" id="alarm-minute" min="0" max="59" placeholder="00">
+                <label for="alarm-second">sec:</label>
+                <input type="number" id="alarm-second" min="0" max="59" placeholder="00">
+                <button id="add-alarm">ADD</button>
+                <div id="alarm-status"></div>
+            </div>
+        </div>
+    </section>
+    <script src="clcok.js"></script>
+</body>
+</html>
